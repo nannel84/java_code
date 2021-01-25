@@ -48,18 +48,8 @@ public class MemberController {
 
 //회원 추가하기
 	private static void insertMember() {
-	    //MemberVO member = new MemberVO();
-	    
-		//int insertMember = MemberService.operationMember(member);
 	    MemberView.insertMember();
 	    	   
-		
-		
-		
-//		MemberVO member = new MemberVO();
-//	    
-//	    MemberView.insertMember(member);
-		
 	}	
 	  
 //메뉴	
@@ -100,7 +90,6 @@ public class MemberController {
 				selectAll();
 				break;
 			case 3:  //회원 정보 수정하기
-				//selectCount();
 				updateMember();
 				break;
 			case 4:  //회원 삭제

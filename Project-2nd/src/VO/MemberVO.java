@@ -2,6 +2,7 @@ package VO;
 
 public class MemberVO {
 
+//변수선언 (private)
 	private String rownum;
 	private String name;
 	private String phone;
@@ -9,7 +10,9 @@ public class MemberVO {
 	private String relation;
 	private String name1;
 	private String num;
+
 	
+// 생성자 	
 	public MemberVO() {
 	}
 	
@@ -62,7 +65,7 @@ public class MemberVO {
 	}
 
 	
-	
+//private로 만들어서  get/set  적용	
 	public String getName1() {
 		return name1;
 	}

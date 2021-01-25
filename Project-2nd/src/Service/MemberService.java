@@ -18,7 +18,7 @@ public class MemberService {
 		return memberList;
 		}
 
-//회원 수정
+//회원 조작 (변경,삭)
 	public static int operationMember(MemberVO member) {
 		int rowcnt = 0;
 		
@@ -26,23 +26,9 @@ public class MemberService {
 		
 		MemberDAO.deleteMember(member);
 		
-		MemberDAO.insertMember(member);
-		
 		
 		return rowcnt;
 }
 
-// 회원 추가
-//	public  int insertMember(MemberVO member) {
-//		int rowcnt = 0;
-//	    
-//	    return rowcnt;
-//	}  
-//// 회원 삭제
-//	public static int deleteMember(MemberVO member) {
-//		int rowcnt = 0;
-//		    
-//		return rowcnt;
-//	}  
 
 }
